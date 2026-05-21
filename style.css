@@ -83,7 +83,7 @@ nav ul li a:hover::after{
     rgba(0,0,0,0.6),
     rgba(0,0,0,0.6)
     ),
-    url("background.jpg");
+    url("img/background.jpg");
 
     background-size:cover;
     background-position:center;
@@ -285,7 +285,7 @@ h2::after{
     content:"";
     position:absolute;
     inset:0;
-    background:url("homepage.png") center/cover no-repeat;
+    background:url("img/homepage.png") center/cover no-repeat;
     opacity:0;
     transition:opacity 0.3s ease;
     z-index:0;
@@ -312,7 +312,7 @@ h2::after{
     content:"";
     position:absolute;
     inset:0;
-    background:url("pythoncode.png") center/cover no-repeat;
+    background:url("img/pythoncode.png") center/cover no-repeat;
     opacity:0;
     transition:opacity 0.3s ease;
     z-index:0;
@@ -338,7 +338,7 @@ h2::after{
     content:"";
     position:absolute;
     inset:0;
-    background:url("erd.png") center/cover no-repeat;
+    background:url("img/erd.png") center/cover no-repeat;
     opacity:0;
     transition:opacity 0.3s ease;
     z-index:0;
