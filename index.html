@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruhma's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Ruhma</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+
+        <img src="me.png" alt="Ruhma's professional profile photo">
+
+        <h1>Hello, I'm Ruhma</h1>
+
+        <p>
+          Information Technology Student • Aspiring Web Developer • Building Technology Solutions Through Learning
+        </p>
+
+        <a href="#projects" class="button">
+            View My Work
+        </a>
+
+    </header>
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a junior pursuing a Bachelor’s degree in Information Technology at George Mason University, with a strong interest in technology, web development, programming, and creating solutions that combine functionality with user-focused design. As I continue building my technical skills, I enjoy exploring areas such as front-end development, database systems, and software development while applying what I learn through hands-on academic and personal projects. My mission is to continuously grow as a technology professional by developing innovative solutions, expanding my problem-solving abilities, and gaining practical experience that prepares me for a career in the technology industry. Through my coursework and projects, I strive to build applications and systems that are efficient, accessible, and meaningful to users. This portfolio showcases my learning journey, technical projects, and progress as I continue strengthening my skills and exploring opportunities within the field of Information Technology.
+        </p>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skill-box">
+
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">Python</div>
+            <div class="card">MySQL</div>
+            <div class="card">GitHub</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+            <a href="https://gmuedu-my.sharepoint.com/:b:/g/personal/rwaheed2_gmu_edu/IQCMO8DXMsGRSaw92xjv5u9EAfFi0exlvIC7yMfASmKfXhs?e=ch37l6" class="project-card readers-world">
+
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+
+                <h3>Readers World – HTML/CSS Reading Hub</h3>
+
+                <p>
+                    A responsive multi-page HTML/CSS website designed for book lovers featuring recommendations, multimedia content, interactive elements, and user-focused navigation.
+                </p>
+
+            </a>
+
+            <a href="https://gmuedu-my.sharepoint.com/:b:/g/personal/rwaheed2_gmu_edu/IQBzOOBKrIYET4A2mlP3d1ubAf_buY--PKJjgNdJAjPqpp4?e=IccbKv" class="project-card fast-food">
+
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                </div>
+
+                <h3>Fast Food Nutrition Analysis System</h3>
+
+                <p>
+                    Python application for analyzing fast food nutritional datasets with CSV processing, statistical analysis, search functionality, exception handling, and JSON export capabilities.
+                </p>
+
+            </a>
+
+            <a href="https://gmuedu-my.sharepoint.com/:b:/g/personal/rwaheed2_gmu_edu/IQBLrnL0fFkwS54c8bQTd6IhAUmDU9DCkZLY9itm4VqX1q0?e=sikd3b" class="project-card library-system">
+
+                <div class="project-tags">
+                    <span class="tag">SQL</span>
+                </div>
+
+                <h3>Library Management System Database</h3>
+
+                <p>
+                    Collaborative SQL database project designed to streamline library operations through relational database design, ERD modeling, SQL scripting, and structured data management.
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+<!-- Contact -->
+    <section id="contact">
+
+      <h2>Contact</h2>
+
+      <p>Let’s connect! I’m always interested in discussing new projects and opportunities.</p>
+
+      <div class="contact-buttons">
+
+          <!-- LinkedIn Button -->
+          <a href="https://www.linkedin.com/in/rwaheed66/" target="_blank" class="contact-btn">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" 
+                  alt="LinkedIn" class="icon" style="color: #e0e0e0;">
+              LinkedIn
+          </a>
+
+          <!-- Email Button (Outlook-style) -->
+          <a href="mailto:rwaheed2@gmu.edu" class="contact-btn">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftoutlook.svg" 
+                  alt="Email" class="icon" style="color: #e0e0e0;">
+              Email Me
+          </a>
+
+
+      </div>
+
+    </section>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/rwaheed66/">LinkedIn</a></li>
+                    <li><a href="mailto:rwaheed2@gmu.edu">Email</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="copyright">© 2026 Ruhma Portfolio</p>
+
+    </footer>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+    </script>
+
 </body>
 </html>
