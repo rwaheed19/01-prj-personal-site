@@ -260,6 +260,86 @@ h2::after{
     gap:25px;
 }
 
+/* Section Description */
+
+.section-description{
+
+    max-width:750px;
+
+    margin:0 auto 40px;
+
+    text-align:center;
+
+    line-height:1.7;
+
+    color:#555;
+
+    font-size:17px;
+
+}
+
+/* Projects Button */
+
+.projects-button{
+
+    text-align:center;
+
+    margin-top:45px;
+
+}
+
+/* Projects Page Header */
+
+.page-header{
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.65)
+    ),
+    url("img/background.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+
+    text-align:center;
+
+    padding:120px 20px 90px;
+
+}
+
+.page-header h1{
+
+    font-size:56px;
+
+    margin-bottom:20px;
+
+}
+
+.page-header p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:19px;
+
+}
+
+/* Logo */
+
+.logo{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
 .project-card{
     background:white;
 
@@ -281,14 +361,93 @@ h2::after{
     color:inherit;
 }
 
-.project-card.readers-world::before{
+.project-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.project-card::before{
+
     content:"";
+
     position:absolute;
+
     inset:0;
-    background:url("img/homepage.png") center/cover no-repeat;
+
+    background-image:var(--project-image);
+
+    background-size:cover;
+
+    background-position:center;
+
     opacity:0;
-    transition:opacity 0.3s ease;
-    z-index:0;
+
+    transition:.3s;
+
+}
+
+.project-card:hover::before{
+
+    opacity:1;
+
+}
+
+.project-card h3,
+.project-card p,
+.project-tags{
+
+    position:relative;
+
+    z-index:1;
+
+    transition:.3s;
+
+}
+
+.project-card:hover h3,
+.project-card:hover p{
+
+    opacity:0;
+
+}
+
+.readers-world{
+
+    --project-image:url("img/homepage.png");
+
+}
+
+.fast-food{
+
+    --project-image:url("img/pythoncode.png");
+
+}
+
+.library-system{
+
+    --project-image:url("img/erd.png");
+
+}
+
+.loreal-chatbot{
+
+    --project-image:url("img/chatbot.jpeg");
+
+}
+
+.nasa-app{
+
+    --project-image:url("img/nasaapp.jpeg");
+
+}
+
+.charity-water{
+
+    --project-image:url("img/watersaviorgame.jpeg");
+
 }
 
 .project-card.readers-world:hover::before{
@@ -308,15 +467,7 @@ h2::after{
 }
 
 
-.project-card.fast-food::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:url("img/pythoncode.png") center/cover no-repeat;
-    opacity:0;
-    transition:opacity 0.3s ease;
-    z-index:0;
-}
+
 
 .project-card.fast-food:hover::before{
     opacity:1;
@@ -334,15 +485,7 @@ h2::after{
     opacity:0;
 }
 
-.project-card.library-system::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:url("img/erd.png") center/cover no-repeat;
-    opacity:0;
-    transition:opacity 0.3s ease;
-    z-index:0;
-}
+
 
 .project-card.library-system:hover::before{
     opacity:1;
@@ -578,4 +721,58 @@ footer{
     background:#4b79a1;
     transform:translateY(-5px);
     box-shadow:0 6px 16px rgba(0,0,0,0.3);
+}
+
+@media(max-width:900px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .page-header h1{
+
+        font-size:42px;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    section{
+
+        padding:60px 8%;
+
+    }
+
+    .project-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
 }
